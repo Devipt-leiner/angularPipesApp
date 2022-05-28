@@ -6,11 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class NumbersComponent implements OnInit {
+export class NumbersComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  netSales: number = 2430854.5534;
+  percentage: number = 0.46;
 
 }
