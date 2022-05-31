@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Color, Heroe } from '../../interface/sales.interfaces';
 
 @Component({
   selector: 'app-order',
@@ -6,11 +7,39 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class OrderComponent implements OnInit {
+export class OrderComponent {
 
-  constructor() { }
+  isCapitalLetter: boolean = true;
+  orderBy: string = '';
+  heroes: Heroe[] = [
+    {
+      name: 'Superman',
+      fly: true,
+      color: Color.blue
+    },
+    {
+      name: 'Batman',
+      fly: false,
+      color: Color.black
+    },
+    {
+      name: 'Robin',
+      fly: false,
+      color: Color.green
+    },
+    {
+      name: 'Daredevil',
+      fly: false,
+      color: Color.red
+    }
+  ];
 
-  ngOnInit(): void {
+  capitalLetter () {
+    this.isCapitalLetter = !this.isCapitalLetter;
+  }
+
+  changeOrder (value: string) {
+    this.orderBy = value;
   }
 
 }

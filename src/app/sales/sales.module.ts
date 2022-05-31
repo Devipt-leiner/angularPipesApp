@@ -8,6 +8,9 @@ import { NotCommonsComponent } from './pages/not-commons/not-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
 
+import { CapitaLettersPipe } from './pipes/capital_letters.pipe';
+import { FlyPipe } from './pipes/fly.pipe';
+import { OrderPipe } from './pipes/order.pipe';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { OrderComponent } from './pages/order/order.component';
     NumbersComponent,
     NotCommonsComponent,
     BasicsComponent,
-    OrderComponent
+    OrderComponent,
+    CapitaLettersPipe,
+    FlyPipe,
+    OrderPipe
   ],
   exports: [
     NumbersComponent,
