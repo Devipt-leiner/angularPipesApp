@@ -1,0 +1,26 @@
+<div class="text-layout">
+  <h1>Mis Pipes personalizados</h1>
+  <p>
+    Pipes un poco más personalizados para ser utilizados en algún futuro no muy
+    lejano...
+  </p>
+</div>
+
+<hr />
+
+<div class="grid">
+  <div class="col-12">
+    <p-card
+      header="Determinar fecha límite de pago a partir de dos fechas"
+      [subheader]="
+        'Este Pipe se encarga de recibir una fecha para luego hacer una comparación con la fecha actual y devolver un estado.'
+      "
+    >
+      <div class="flex flex-column gap-2">
+        <span><strong>Fecha actual: </strong>{{ currentDate }}</span>
+        <span><strong>Fecha límite de pago: </strong>{{ paymentDate }}</span>
+        <span class="text-primary"><strong>Valor retornado: </strong>{{ paymentDate | announcementStatus }}</span>
+      </div>
+    </p-card>
+  </div>
+</div>

@@ -11,6 +11,8 @@ import { OrderComponent } from './pages/order/order.component';
 import { CapitaLettersPipe } from './pipes/capital_letters.pipe';
 import { FlyPipe } from './pipes/fly.pipe';
 import { OrderPipe } from './pipes/order.pipe';
+import { CustomComponent } from './pages/custom/custom.component';
+import { AnnouncementStatusPipe } from './pipes/announcement-status.pipe';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { OrderPipe } from './pipes/order.pipe';
     OrderComponent,
     CapitaLettersPipe,
     FlyPipe,
-    OrderPipe
+    OrderPipe,
+    CustomComponent,
+    AnnouncementStatusPipe
   ],
   exports: [
     NumbersComponent,
